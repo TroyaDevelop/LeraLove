@@ -186,6 +186,7 @@ h1 {
   height: 100%;
   -webkit-animation: snow1 18s linear infinite;
           animation: snow1 18s linear infinite;
+  z-index: -1;
 }
 .snow__small {
   background-image: url("../img/snow2.png"), url("../img/snow3.png");
@@ -194,4 +195,5 @@ h1 {
   width: 100%;
   height: 100%;
   position: absolute;
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */

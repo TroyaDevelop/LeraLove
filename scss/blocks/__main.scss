@@ -33,7 +33,8 @@
         position:absolute;
         width: 100%;
         height: 100%;
-        animation: snow1 18s linear infinite;    
+        animation: snow1 18s linear infinite;  
+        z-index: -1;  
     }
     &__small{
         background-image: url("../img/snow2.png"),url("../img/snow3.png");
@@ -41,5 +42,6 @@
         width: 100%;
         height: 100%;
         position:absolute;
+        z-index: -1;
     }
 }
