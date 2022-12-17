@@ -1,3 +1,14 @@
+@keyframes snow2{
+    0%{background-position: 0 0, 0 0;}
+    100%{background-position: 10% 600px, 10% 600px;}
+}
+@keyframes snow1{
+    from{background-position: 0 -300px;}
+    20% {background-position: 20% -100px;}
+    40% {background-position: 30% 100px;}
+    to{background-position: 20% 700px;}
+}
+
 .header{
     color: red;
     font-size: 42px;
@@ -11,5 +22,24 @@
 
     @include mobile{
         width: 100%;
+    }
+}
+
+.snow{
+    position: relative;
+
+    &__big{
+        background-image: url("../img/snow1.png");
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        animation: snow1 18s linear infinite;    
+    }
+    &__small{
+        background-image: url("../img/snow2.png"),url("../img/snow3.png");
+        animation: snow2 10s linear infinite;
+        width: 100%;
+        height: 100%;
+        position:absolute;
     }
 }
